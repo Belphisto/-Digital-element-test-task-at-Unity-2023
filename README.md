@@ -1,5 +1,5 @@
 # -Digital-element-test-task-at-Unity-2023
-Creating a 3D model of a multimeter
+Multimeter programming on Unity 3D
 
 Version: 2021.3.17f1 
 
