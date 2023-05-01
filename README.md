@@ -1,9 +1,9 @@
 # -Digital-element-test-task-at-Unity-2023
 Multimeter programming on Unity 3D
 
-Version Unity: 2021.3.17f1 
+Version of Unity: 2021.3.17f1 
 
-# С применением паттерена MVC 
+# С применением паттерна MVC 
 Для удобства редактирования отдельных элементов независимо друг от друга.
 
 - class MultimeterView - отвечает за визуальное представление результатов на Canvas и дисплей мультиметра.
