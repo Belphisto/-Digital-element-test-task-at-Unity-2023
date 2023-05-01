@@ -1,7 +1,7 @@
 # -Digital-element-test-task-at-Unity-2023
 Multimeter programming on Unity 3D
 
-Version: 2021.3.17f1 
+Version Unity: 2021.3.17f1 
 
 # С применением паттрена MVC 
 Для удобства редактирования отдельных элементов независимо друг от друга.
