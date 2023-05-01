@@ -17,7 +17,7 @@ public class MultimeterModel
         }
         else if (angle <= 135f)
         {   Debug.Log($"_ngle {angle}");
-            return Mathf.Sqrt(_power * _resistance);
+            return Mathf.Sqrt(_power / _resistance);
         }
         else if (angle ==225f)
         {   Debug.Log($"_ngle {angle}");
@@ -25,13 +25,11 @@ public class MultimeterModel
         }
         else if (angle == 315f)
         {   Debug.Log($"_ngle {angle}");
-            return Mathf.Sqrt(_power / _resistance);
+            return Mathf.Sqrt(_power * _resistance);
         }
         else
         {
             return 0f;
         }
     }
-
-
 }

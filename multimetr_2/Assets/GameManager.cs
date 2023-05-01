@@ -15,9 +15,6 @@ public class GameManager : MonoBehaviour
     {
         _multimeterModel = new MultimeterModel();
         var multimeterObject = Instantiate(_multimeterPrefab, Vector3.zero, Quaternion.identity);
-        //var multimeterView = multimeterObject.GetComponent<MultimeterView>();
-        //_toggle= multimeterObject.GetComponent<ToggleSwithHighlight>();
-
         _multimeterController = new MultimeterController(_view, _multimeterModel, _toggle);
 
     }

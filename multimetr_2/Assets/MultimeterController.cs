@@ -14,24 +14,25 @@ public class MultimeterController
         _multimeterView.OnAngleChanged += HandleAngleChanged;
         _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(_toggle.getToggle()));
         _toggle.OnToggleChanged += HandleToggleChanged;
-         Debug.Log($"_toggle1 {_toggle.getToggle()}");
     }
 
     private void HandleAngleChanged(float angle)
     {
         _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(_toggle.getToggle()));
-         Debug.Log($"_toggle2 {_toggle.getToggle()}");
+        _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(_toggle.getToggle()), _toggle.getToggle());
     }
 
     private void HandleToggleChanged(float toggle)
     {
-    _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(toggle));
+        _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(_toggle.getToggle()));
+        _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(toggle), _toggle.getToggle());
     }
 
     void Update()
     {
         _multimeterView.OnAngleChanged += HandleAngleChanged;
         _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(_toggle.getToggle()));
+        _multimeterView.UpdateValue(_multimeterModel.CalculateCurrent(_toggle.getToggle()), _toggle.getToggle());
        
     }
 }

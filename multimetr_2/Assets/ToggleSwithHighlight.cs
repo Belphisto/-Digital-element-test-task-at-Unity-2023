@@ -8,9 +8,7 @@ public class ToggleSwithHighlight : MonoBehaviour
     public Material highlightMaterial; // Материал для подсветки
 
     private Material originalMaterial; // Исходный материал
-    public float rotationSpeed = 10.0f; // Скорость поворота объекта
-    public float _toggle = 0f;
-
+    private float _toggle = 0f;
     private bool mouseOverObject = false; // Флаг, указывающий на нахождение мыши на объекте
     private float currentRotation = 0f;
     private float[] rotationPoints = { 45f, 135f, 225f, 315f, 0f };
@@ -22,7 +20,6 @@ public class ToggleSwithHighlight : MonoBehaviour
     void Start()
     {
         originalMaterial = GetComponent<Renderer>().material;
-        
     }
 
     private void OnMouseEnter()
